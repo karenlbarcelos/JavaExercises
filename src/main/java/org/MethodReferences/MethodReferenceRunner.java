@@ -16,5 +16,15 @@ public class MethodReferenceRunner {
                 .stream()
                 .map(String::length)
                 .forEach(System.out::println);
+
+        Integer max = List.of(23,45,67,34).stream()
+                .filter(MethodReferenceRunner::isEven)
+                .max(Integer::max)
+                .orElse(0);
+        System.out.println(max);
+    }
+
+    public static boolean isEven(Integer number){
+        return number%2==0;
     }
 }
