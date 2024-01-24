@@ -14,11 +14,11 @@ public class ExcepcionalHandlingRunner2 {
 
     private static void method2() {
         try {
-//            String str = null;
-//            str.length();
+            String str = null;
+            str.length();
 
-            int[] i = {1,2};
-            int number = i[3];
+//          int[] i = {1,2};
+//          int number = i[3];
 
             System.out.println("Method2 Ended");
         } catch (ArrayIndexOutOfBoundsException ex) {

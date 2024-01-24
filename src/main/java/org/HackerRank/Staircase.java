@@ -3,6 +3,7 @@ package org.HackerRank;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 
 class Result {
     public static void staircase(int n) {
@@ -19,7 +20,6 @@ class Result {
             System.out.println();
         }
     }
-
 }
 
 public class Staircase {

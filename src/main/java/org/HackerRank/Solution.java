@@ -10,8 +10,9 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        List<Integer> teste = List.of(3,2,1,3);
+        List<Integer> teste = List.of(1,2,1,3,2);
 
-        BirthdayCakeCandles.birthdayCakeCandles(teste);
+        System.out.println(SubarrayDivision.birthday(teste, 3, 2));
+
     }
 }
