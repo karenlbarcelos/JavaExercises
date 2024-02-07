@@ -23,21 +23,17 @@ public class DiagonalDifference {
         int leftDiagonal = 0;
 
         for (int i = 0; i < arr.size(); i++) {
-            for (int j = i; j <= i; j++) {
-                rightDiagonal += arr.get(j).get(i);
-            }
+            rightDiagonal += arr.get(i).get(i);
         }
 
         for (int i = 0; i < arr.size(); i++) {
-            for (int j = arr.size()-1; j == arr.size()-1; j--) {
+            for (int j = arr.size() - 1; j == arr.size() - 1; j--) {
                 j -= i;
                 leftDiagonal += arr.get(i).get(j);
             }
         }
 
-        int diagonalSum = rightDiagonal - leftDiagonal;
-
-        return Math.abs(diagonalSum);
+        return Math.abs(rightDiagonal - leftDiagonal);
     }
 }
 
