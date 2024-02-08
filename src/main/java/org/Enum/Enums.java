@@ -7,7 +7,7 @@ public enum Enums {
 
     private int value;
 
-    private Enums(int value) {
+    Enums(int value) {
         this.value = value;
     }
 
