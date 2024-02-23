@@ -1,5 +1,6 @@
 package org.HackerRank;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class BetweenTwoSets {
@@ -20,7 +21,7 @@ public class BetweenTwoSets {
         }
     }
 
-    public int getTotalX(List<Integer> a, List<Integer> b) {
+    public int getTotalX(LinkedList<Integer> a, List<Integer> b) {
 
         // a [2, 4]     =  4, 8, 12, 16 % 2 e 4 == 0
         // b [16, 32, 96]
