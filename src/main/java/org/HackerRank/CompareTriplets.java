@@ -18,17 +18,17 @@ public class CompareTriplets {
         int[] tripletsResult = new int[2];
 
         for (int i = 0; i < a.size(); i++) {
-            if (a.get(i) > b.get(i)) {
-                tripletsResult[0] = tripletsResult[0] + 1;
-            } else if (b.get(i) > a.get(i)) {
-                tripletsResult[1] = tripletsResult[1] + 1;
+
+            int aliceRate = a.get(i);
+            int bobRate = b.get(i);
+            if (aliceRate > bobRate) {
+                tripletsResult[0]++;
+            } else if (bobRate > aliceRate) {
+                tripletsResult[1]++;
             }
         }
 
-        List<Integer> tripletsResult1 = new ArrayList<>(List.of(tripletsResult[0], tripletsResult[1]));
-
-        return tripletsResult1;
-
+        return List.of(tripletsResult[0], tripletsResult[1]);
     }
 
     public static void main(String[] args) {
