@@ -21,6 +21,7 @@ public class CompareTriplets {
 
             int aliceRate = a.get(i);
             int bobRate = b.get(i);
+
             if (aliceRate > bobRate) {
                 tripletsResult[0]++;
             } else if (bobRate > aliceRate) {
