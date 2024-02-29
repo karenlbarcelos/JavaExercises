@@ -18,10 +18,10 @@ public class MigratoryBirds {
         for(int cont : arr){
             switch (cont){
                 case 1 -> countMax[0]++;
-                case 2 -> countMax[2]++;
-                case 3 -> countMax[3]++;
-                case 4 -> countMax[4]++;
-                case 5 -> countMax[5]++;
+                case 2 -> countMax[1]++;
+                case 3 -> countMax[2]++;
+                case 4 -> countMax[3]++;
+                case 5 -> countMax[4]++;
             }
         }
 
