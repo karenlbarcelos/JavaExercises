@@ -25,13 +25,25 @@ public class Stack {
         System.out.println("Added " + data + "! Stack size is now " + this.size);
     }
 
-    public static void main(String[]args) {
+    public String pop(){
+        String data = this.stack.removeHead();
+        this.size--;
+        System.out.println("Removed " + data + "! Stack size is now " + this.size);
+        return data;
+    }
 
+    public String peek(){
+        return this.stack.head.data;
+    }
+
+    public static void main(String[]args) {
 
         Stack stackOne = new Stack(6);
         System.out.println("stackOne can have " + stackOne.maxSize + " nodes!");
-        Stack stackTwo = new Stack();
-        System.out.println("stackTwo can have " + stackTwo.maxSize + " nodes!");
+        //Stack stackTwo = new Stack();
+        //System.out.println("stackTwo can have " + stackTwo.maxSize + " nodes!");
+        stackOne.push("Karen");
+        stackOne.peek();
 
     }
 }
