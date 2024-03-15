@@ -1,4 +1,6 @@
-package org.Queue;
+package org.LinkedListAndNode.Queue;
+
+import org.LinkedListAndNode.LinkedList;
 
 public class Queue {
 

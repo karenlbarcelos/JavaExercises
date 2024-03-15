@@ -1,4 +1,4 @@
-package org.Queue;
+package org.LinkedListAndNode.Queue;
 
 public class RestaurantOrders {
 

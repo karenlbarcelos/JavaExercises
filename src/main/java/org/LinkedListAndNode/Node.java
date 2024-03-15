@@ -1,4 +1,4 @@
-package org.Queue;
+package org.LinkedListAndNode;
 
 public class Node {
 
