@@ -1,5 +1,7 @@
 package org.HashMap;
 
+import java.util.Arrays;
+
 public class HashMap {
 
     public String[] hashmap;
@@ -15,15 +17,19 @@ public class HashMap {
             hashCode = hashCode + Character.codePointAt(key, i);
         }
 
+        hashCode = hashCode % this.hashmap.length;
         return hashCode;
+    }
+
+    public void assign(String key, String value){
+        int arrayIndex = this.hash(key);
+        this.hashmap[arrayIndex] = value;
     }
 
     public static void main(String[] args) {
 
-        HashMap newHashMap = new HashMap(3);
-        System.out.println(newHashMap.hash("c")); // => 99
-        System.out.println(newHashMap.hash("ca")); // => 196
-        System.out.println(newHashMap.hash("car"));
-        System.out.println(newHashMap.hash("cara"));
+        HashMap employees = new HashMap(3);
+
+        System.out.println(Arrays.toString(employees.hashmap));
     }
 }
