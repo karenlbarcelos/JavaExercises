@@ -45,6 +45,19 @@ public class HashMap {
         }
     }
 
+    public String retrieve(String key) {
+        int arrayIndex = this.hash(key);
+        Node current = this.hashmap[arrayIndex].head;
+
+        while(current != null){
+            if(current.key == key){
+                return current.value;
+            }
+            current = current.getNextNode();
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
 
     }
