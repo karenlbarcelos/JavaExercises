@@ -26,10 +26,16 @@ public class HashMap {
         this.hashmap[arrayIndex] = value;
     }
 
+    public String retrieve(String key){
+        int arrayIndex = this.hash(key);
+        return this.hashmap[arrayIndex];
+    }
+
     public static void main(String[] args) {
 
-        HashMap employees = new HashMap(3);
+        HashMap aboutMe = new HashMap(3);
 
-        System.out.println(Arrays.toString(employees.hashmap));
+        aboutMe.assign("myFavoriteColor", "brown");
+        System.out.println(aboutMe.retrieve("myFavoriteColor"));
     }
 }
