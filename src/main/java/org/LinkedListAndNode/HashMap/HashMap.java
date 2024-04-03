@@ -60,5 +60,14 @@ public class HashMap {
 
     public static void main(String[] args) {
 
+        HashMap birdCensus = new HashMap(15);
+
+        birdCensus.assign("mandarin duck","Central Park Pond");
+        birdCensus.assign("monk parakeet","Brooklyn College");
+        birdCensus.assign("horned owl","Pelham Bay Park");
+
+        System.out.println(birdCensus.retrieve("mandarin duck"));
+        System.out.println(birdCensus.retrieve("monk parakeet"));
+        System.out.println(birdCensus.retrieve("horned owl"));
     }
 }

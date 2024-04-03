@@ -1,0 +1,17 @@
+package org.Recursion;
+
+public class Factorial {
+    public static int recursiveFactorial(int n) {
+        if (n > 0) {
+            System.out.println("Execution context: " + n);
+            return n * recursiveFactorial(n - 1);
+        } else {
+            return 1;
+        }
+    }
+
+    public static void main(String[] args) {
+        int recursiveSolution = recursiveFactorial(10);
+        System.out.println(recursiveSolution);
+    }
+}
